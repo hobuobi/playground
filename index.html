@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Test</title>
+        <script type="text/javascript" src="javascript/d3.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+			var dataset = [5,10,15,20,25];
+			
+			bod = d3.select("body");
+            bod
+				.selectAll("p")
+				.enter()
+				.append("p")
+				.text(function(d) {
+					return d;
+				});
+        </script>
+    </body>
+</html>
