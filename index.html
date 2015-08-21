@@ -4,22 +4,15 @@
         <meta charset="utf-8">
         <title>D3 Test</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <script type="text/javascript" src="javascript/d3.js"></script>
     </head>
     <body>
         <script type="text/javascript">
-			var dataset = [5,10,15,20,25];
-			
-			bod = d3.select("body");
-            bod
-				.selectAll("div")
-				.data(dataset)
-				.enter()
-				.append("div")
-                .attr("class", "bar")
-                .style("height", function(d){
-                    return d*4;
-                })
         </script>
+        
+        <div class = "col-md-3" id="navbar"></div>
+        
+        <div class = "col-md-9" id = "body"></div>
     </body>
 </html>

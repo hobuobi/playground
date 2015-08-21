@@ -5,3 +5,13 @@ div.bar {
     height: 75px;   /* We'll override this later */
     background-color: teal;
 }
+
+div#navbar {
+	background-color: #BBBBBB;
+    height: 100%;
+}
+
+div#body {
+	background-color: #FFFFFF;
+    height: 100%;
+}
