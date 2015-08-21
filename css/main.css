@@ -1,3 +1,19 @@
+html { height: 100%; }
+body { height: 100%; }
+
+div.col-md-3 {
+    width: 16%;
+}
+div.jumbotron {
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #333333;
+    background-color: white;
+}
+h1 {
+    font-weight: 700;
+    color: #333333;
+}
 
 div.bar {
     display: inline-block;
@@ -7,11 +23,52 @@ div.bar {
 }
 
 div#navbar {
-	background-color: #BBBBBB;
+	background-color: #DDDDDD;
     height: 100%;
+    padding: 0px;
 }
 
 div#body {
 	background-color: #FFFFFF;
     height: 100%;
+}
+
+div#logo-box {
+    width: 100%;
+    padding: 10px;
+}
+div.nav {
+    border: solid red;
+    border-width: 0px 0px 0px 7px;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    
+    padding: 3px 10px 3px 10px;
+    width: 100%;
+    height: 40px;
+    background-color: #DDDDDD;
+    margin-bottom: 5px;
+}
+.nav:hover {
+    background-color: white;
+    color: red;
+}
+div#content {
+    
+    font-family: 'Open Sans', 'Arial, Helvetica, sans-serif';
+    font-weight: 400;
+    width: 100%;
+    
+}
+img#logo {
+    width: 100%;
+}
+hr {
+    color: red;
+}
+footer {
+    /* background-color: #DDDDDD; */
+    font-family: 'Open Sans', sans-serif;
 }
