@@ -19,16 +19,23 @@
         <script type="text/javascript">
         
         $(document).ready(function() {
-            var dataset = [1,2,3];
+            var dataset = [1,2,3,4,5,6];
             var barBox = d3.select("#barbox");
-            barBox.selectAll("div")
+            var barSelect = barBox.selectAll("div")
                 .data(dataset)
                 .enter()
-                .append("div")
-                .attr("class","bar")
+                .append("div");
+            barSelect
                 .style("height",function(d){
-                    return dataset[i]*50;
+                    return (d*d*5)+"px";
+                })
+                .attr("class","bar")
+                ;
+            $(".bar").each( function(index) {
+                $(this).hover(function() {
+                    $("#textPara").text((d3.selectAll(".bar").data())[index]);
                 });
+            });
         });
         </script>
         
@@ -52,7 +59,9 @@
            <div class = "content" style="background-color: #DDDDDD">
                <div class="testBox" id = "barbox"></div>
                <div class="testBox"></div>
-               <div class="testBox"></div>
+               <div class="testBox">
+                   <p id="textPara"> </p>
+               </div>
            </div>
                
            
