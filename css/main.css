@@ -4,6 +4,7 @@ body { height: 100%; }
 div.col-md-3 {
     width: 16%;
 }
+
 div.jumbotron {
     width: 100%;
     font-family: 'Josefin Sans', sans-serif;
@@ -11,6 +12,7 @@ div.jumbotron {
     background-color: white;
 }
 h1 {
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     color: #333333;
 }
@@ -18,8 +20,10 @@ h1 {
 div.bar {
     display: inline-block;
     width: 20px;
-    height: 75px;   /* We'll override this later */
+    height: 100px;   /* We'll override this later */
     background-color: teal;
+    
+    margin: 5px; 
 }
 
 div#navbar {
@@ -36,6 +40,15 @@ div#body {
 div#logo-box {
     width: 100%;
     padding: 10px;
+}
+div.testBox {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    height: 190px;
+    width: 32.6666%;
+    display: inline-block;
+    padding: 10px;
+    
 }
 div.nav {
     border: solid red;
@@ -55,12 +68,13 @@ div.nav {
     background-color: white;
     color: red;
 }
-div#content {
+div.content {
     
     font-family: 'Open Sans', 'Arial, Helvetica, sans-serif';
     font-weight: 400;
     width: 100%;
-    
+    border-radius: 10px;
+    padding: 1%;
 }
 img#logo {
     width: 100%;

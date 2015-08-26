@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Playground</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        
+        <!-- FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700italic,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <!-- JS --> 
+        <script type="text/javascript" src="../javascript/jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="../javascript/d3.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+        $(document).ready(function() {
+            var dataset = [1,2,3];
+            var barBox = d3.select("#barbox");
+            barBox.selectAll("div")
+                .data(dataset)
+                .enter()
+                .append("div")
+                .attr("class","bar")
+                .style("height",function(d){
+                    return dataset[i]*50;
+                });
+        });
+        </script>
+        
+        <div class = "col-md-3" id="navbar">
+            
+            <div id="logo-box">
+                <img src="../img/HO_logo.png" id="logo">
+            </div>
+            <hr />
+                
+            <div class = "nav">ABOUT</div>
+            <a href="../pages/insights.html"><div class = "nav">INSIGHTS</div></a>
+            <a href="../pages/angular.html"><div class = "nav">ANGULAR</div></a>
+                
+        </div> 
+        <div class = "col-md-9" id = "body">
+           <h1>D3 & INSIGHTS</h1>
+           <hr />
+           First, some experimenting with D3 and JQuery: 
+           
+           <div class = "content" style="background-color: #DDDDDD">
+               <div class="testBox" id = "barbox"></div>
+               <div class="testBox"></div>
+               <div class="testBox"></div>
+           </div>
+               
+           
+        </div>
+        
+        <footer class = "footer">
+            <div class = "container">
+                <p>Humphrey Obuobi, 2015.</p>
+            </div>
+        </footer>
+    </body>
+</html>
